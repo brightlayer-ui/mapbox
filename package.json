@@ -1,6 +1,6 @@
 {
   "name": "@pxblue/mapbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Various Mapbox themes for use in PX Blue applications",
   "main": "index.js",
   "scripts": {
