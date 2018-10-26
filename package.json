@@ -1,26 +1,25 @@
 {
-    "name": "@pxblue/mapbox",
-    "version": "1.0.0",
-    "description": "Various Mapbox themes for use in PX Blue applications",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/pxblue/mapbox.git"
-    },
-    "keywords": [
-      "Mapbox",
-      "Visualization",
-      "PXBlue",
-      "Maps"
-    ],
-    "author": "pxblue <pxblue@eaton.com>",
-    "license": "BSD-3-Clause",
-    "bugs": {
-      "url": "https://github.com/pxblue/mapbox/issues"
-    },
-    "homepage": "https://github.com/pxblue/mapbox#readme"
-  }
-  
+  "name": "@pxblue/mapbox",
+  "version": "1.0.0",
+  "description": "Various Mapbox themes for use in PX Blue applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxblue/mapbox.git"
+  },
+  "keywords": [
+    "Mapbox",
+    "Visualization",
+    "PXBlue",
+    "Maps"
+  ],
+  "author": "pxblue <pxblue@eaton.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/pxblue/mapbox/issues"
+  },
+  "homepage": "https://github.com/pxblue/mapbox#readme"
+}
