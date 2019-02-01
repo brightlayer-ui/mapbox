@@ -4,7 +4,7 @@
   "description": "Various Mapbox themes for use in PX Blue applications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./buildTest.sh"
   },
   "repository": {
     "type": "git",
