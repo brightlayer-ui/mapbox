@@ -1,0 +1,14 @@
+<mgl-map
+    [style]="mapTheme"
+    [zoom]="[10]"
+    [center]="coordinates">
+    <mgl-control position="top-left">
+      <mat-card>
+        <mat-card-title>
+          <h3>Coordinates</h3>
+        </mat-card-title>
+        <div>Longitude:&nbsp;{{coordinates[0]}}</div>
+        <div>Latitude:&nbsp;{{coordinates[1]}}</div>
+      </mat-card>
+    </mgl-control>
+  </mgl-map>
