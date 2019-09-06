@@ -1,6 +1,7 @@
-:host {
+:host, .content {
   display: flex;
   flex: 1;
+  flex-direction: row;
 }
 mgl-map {
   height: 100%;

@@ -4,7 +4,7 @@ import { Component, HostBinding } from '@angular/core';
 @Component({
   selector: 'app',
   template: `
-    <app-layout></app-layout>
+    <app-point></app-point>
     <app-theme-toggle></app-theme-toggle>
   `,
   styles: [`
