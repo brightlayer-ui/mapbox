@@ -1,7 +1,10 @@
 <mgl-map
+    #map
     [style]="mapTheme"
-    [zoom]="[10]"
-    [center]="coordinates">
+    [zoom]="[zoom]"
+    [center]="coordinates"
+    (load)="setMap($event)"
+    (move)="onMove()">
     <mgl-control position="top-left">
       <mat-card>
         <mat-card-title>
@@ -9,6 +12,7 @@
         </mat-card-title>
         <div>Longitude:&nbsp;{{coordinates[0]}}</div>
         <div>Latitude:&nbsp;{{coordinates[1]}}</div>
+        <div>Zoom:&nbsp;{{zoom}}</div>
       </mat-card>
     </mgl-control>
   </mgl-map>
