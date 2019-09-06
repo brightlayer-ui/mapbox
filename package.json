@@ -1,64 +1,25 @@
 {
-  "name": "pxblue-mapbox-angular",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@pxblue/mapbox",
+  "version": "1.0.1",
+  "description": "Various Mapbox themes for use in PX Blue applications",
+  "main": "index.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "./buildTest.sh"
   },
-  "dependencies": {
-    "@angular/animations": "8.2.5",
-    "@angular/cdk": "8.1.3",
-    "@angular/common": "8.2.5",
-    "@angular/compiler": "8.2.5",
-    "@angular/core": "8.2.5",
-    "@angular/flex-layout": "8.0.0-beta.26",
-    "@angular/forms": "8.2.5",
-    "@angular/material": "8.1.3",
-    "@angular/platform-browser": "8.2.5",
-    "@angular/platform-browser-dynamic": "8.2.5",
-    "@mapbox/mapbox-gl-draw": "1.0.9",
-    "@mapbox/mapbox-gl-geocoder": "^4.4.1",
-    "@pxblue/angular-components": "1.1.1",
-    "@pxblue/colors": "1.0.13",
-    "@pxblue/mapbox": "^1.0.1",
-    "@pxblue/ng-progress-icons": "1.1.4",
-    "@pxblue/themes": "2.1.0",
-    "@types/mapbox-gl": "^0.54.3",
-    "core-js": "2.6.9",
-    "mapbox-gl": "^1.3.1",
-    "ngx-mapbox-gl": "3.3.1",
-    "rxjs": "6.4.0",
-    "tslib": "1.10.0",
-    "typeface-open-sans": "0.0.75",
-    "zone.js": "0.9.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxblue/mapbox.git"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.801.1",
-    "@angular/cli": "8.2.2",
-    "@angular/compiler-cli": "8.2.2",
-    "@angular/language-service": "8.2.2",
-    "@types/jasmine": "~3.3.13",
-    "@types/jasminewd2": "~2.0.5",
-    "@types/node": "12.6.4",
-    "codelyzer": "^5.0.1",
-    "jasmine-core": "~3.4.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^4.0.0",
-    "karma-chrome-launcher": "~3.0.0",
-    "karma-coverage-istanbul-reporter": "^2.0.1",
-    "karma-istanbul": "^0.0.2",
-    "karma-jasmine": "~2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.2",
-    "karma-junit-reporter": "^1.2.0",
-    "protractor": "~5.4.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~5.18.0",
-    "typescript": "~3.4.0",
-    "webpack-dev-server": "^3.1.7"
-  }
+  "keywords": [
+    "Mapbox",
+    "Visualization",
+    "PXBlue",
+    "Maps"
+  ],
+  "author": "pxblue <pxblue@eaton.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/pxblue/mapbox/issues"
+  },
+  "homepage": "https://github.com/pxblue/mapbox#readme"
 }
