@@ -1,7 +1,9 @@
 import {Component, OnInit, Renderer2} from '@angular/core';
 import {Subject} from "rxjs/internal/Subject";
 import {Theme} from "./themes";
+
 export const themeChange = new Subject();
+
 @Component({
   selector: 'app-theme-toggle',
   templateUrl: './theme-toggle.component.html',

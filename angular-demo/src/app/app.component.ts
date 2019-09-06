@@ -1,10 +1,10 @@
 
-import { Component, HostBinding } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app',
   template: `
-    <app-point></app-point>
+    <app-map></app-map>
     <app-theme-toggle></app-theme-toggle>
   `,
   styles: [`

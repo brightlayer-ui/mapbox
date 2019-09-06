@@ -8,11 +8,11 @@ const defaultTheme = require('@pxblue/mapbox/default.json');
 const darkTheme = require('@pxblue/mapbox/dark.json');
 
 @Component({
-  selector: 'app-point',
-  templateUrl: './point.component.html',
-  styleUrls: ['./point.component.scss']
+  selector: 'app-map',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.scss']
 })
-export class PointComponent implements OnInit {
+export class MapComponent implements OnInit {
 
   map: Map;
   mapTheme = defaultTheme;
