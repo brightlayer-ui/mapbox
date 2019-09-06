@@ -1,7 +1,7 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {themeChange} from "../theme-toggle/theme-toggle.component";
 import {Theme} from "../theme-toggle/themes";
-import {Map, MapMouseEvent, MapTouchEvent} from "mapbox-gl";
+import {Map} from "mapbox-gl";
 
 declare var require;
 const defaultTheme = require('@pxblue/mapbox/default.json');
