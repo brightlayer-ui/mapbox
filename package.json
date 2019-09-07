@@ -1,7 +1,7 @@
 {
   "name": "@pxblue/mapbox",
   "version": "1.0.1",
-  "author": "pxblue <pxblue@eaton.com>",
+  "author": "PX Blue <pxblue@eaton.com>",
   "description": "Various Mapbox themes for use in PX Blue applications",
   "main": "index.js",
   "scripts": {
