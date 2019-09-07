@@ -1,12 +1,15 @@
 {
   "name": "@pxblue/mapbox",
-  "version": "1.0.1",
   "author": "PX Blue <pxblue@eaton.com>",
+  "license": "BSD-3-Clause",
+  "version": "1.0.1",
   "description": "Various Mapbox themes for use in PX Blue applications",
   "main": "index.js",
   "scripts": {
-    "test": "./buildTest.sh",
-    "link:react-mapbox": "bash ./linkReactMapbox.sh",
+    "test": "bash ./buildTest.sh",
+    "link:angular": "bash ./linkAngularMapbox.sh",
+    "start:angular": "cd angular-demo && yarn && cd .. && yarn link:angular && cd angular-demo && yarn start",
+    "link:react": "bash ./linkReactMapbox.sh",
     "start:react": "cd react-demo && yarn && cd .. && yarn link:react-mapbox && cd react-demo && yarn start" 
   },
   "repository": {
@@ -19,8 +22,6 @@
     "PXBlue",
     "Maps"
   ],
-
-  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/pxblue/mapbox/issues"
   },
