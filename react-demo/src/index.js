@@ -9,10 +9,11 @@ import FlipIcon from '@material-ui/icons/FlipToBack';
 import Chip from '@material-ui/core/Chip';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 
 import styles from './styles/styleClasses';
-import { CardHeader } from '@material-ui/core';
+
 
 const defaultMapTheme = require('@pxblue/mapbox/default.json');
 const darkMapTheme = require('@pxblue/mapbox/dark.json');
@@ -55,8 +56,8 @@ class Application extends React.Component {
       const { lng, lat } = map.getCenter();
 
       this.setState({
-        lng: lng.toFixed(4),
-        lat: lat.toFixed(4),
+        lng: lng.toFixed(2),
+        lat: lat.toFixed(2),
         zoom: map.getZoom().toFixed(2)
       });
     });
@@ -80,7 +81,7 @@ class Application extends React.Component {
         <div style={{height: "100vh"}} ref={el => this.mapContainer = el}/>
         <Card className={this.props.classes.card}>
           <CardContent>
-            <h3>Coordinates</h3>
+            <Typography variant="h6">Coordinates</Typography>
           Longitude: {lng} Latitude: {lat} Zoom: {zoom}
           </CardContent>
         </Card>

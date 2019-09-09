@@ -10,7 +10,7 @@
     "link:angular": "bash ./linkAngularMapbox.sh",
     "start:angular": "cd angular-demo && yarn && cd .. && yarn link:angular && cd angular-demo && yarn start",
     "link:react": "bash ./linkReactMapbox.sh",
-    "start:react": "cd react-demo && yarn && cd .. && yarn link:react-mapbox && cd react-demo && yarn start" 
+    "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start" 
   },
   "repository": {
     "type": "git",
