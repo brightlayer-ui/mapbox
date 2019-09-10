@@ -1148,6 +1148,11 @@
   resolved "https://registry.yarnpkg.com/@pxblue/colors/-/colors-1.0.13.tgz#1ed76734267f77dd4b390836f61d01439fc35132"
   integrity sha512-tneNNYclHmNNIbo6J7XXEumoJZLBXqeO2LFufWxRvIs5yeVVfaJN3zWREl1oo5KP67aDixYgEKB7LH0oeTL+lQ==
 
+"@pxblue/mapbox@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pxblue/mapbox/-/mapbox-1.0.1.tgz#84d1045ddc4baea950f18cd2b9aa7a8d7b49069e"
+  integrity sha512-sl7esZT3Suvc7j4oQWL9iSbFoedPN9oGW4rx8KE5uKS+SuFfUKYciw9fXgFBkLU2VL7GWe6aD+eJ/+onMh+G+Q==
+
 "@pxblue/themes@2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@pxblue/themes/-/themes-2.0.3.tgz#773f7f175f492ff82a624e35634f85265ff0460f"
