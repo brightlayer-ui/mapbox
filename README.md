@@ -1,49 +1,54 @@
-# PX Blue Mapbox
-This is a sample application demonstrating the appearance of the PX Blue themes.
+# Mapbox Themes
+This package contains various Mapbox themes for use with PX Blue. 
 
-| Framework           | Status       | Live Examples  |
-| ---------------- |--------------|------------------|
-| Angular | [![CircleCI](https://circleci.com/gh/pxblue/mapbox/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/mapbox/tree/angular) | [View on Stackblitz](https://stackblitz.com/edit/pxblue-mapbox-angular)
-| React | [![CircleCI](https://circleci.com/gh/pxblue/mapbox/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/mapbox/tree/react) | [View on Stackblitz](https://stackblitz.com/edit/pxblue-mapbox-react)
-| Ionic | [![CircleCI](https://circleci.com/gh/pxblue/mapbox/tree/ionic.svg?style=shield)](https://circleci.com/gh/pxblue/mapbox/tree/ionic) | [View on Stackblitz](https://stackblitz.com/edit/pxblue-mapbox-ionic)
-| React Native | [![CircleCI](https://circleci.com/gh/pxblue/mapbox/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/mapbox/tree/reactnative) | [View on Snack](https://snack.expo.io/@px-blue/mapbox-reactnative)
+## Installation
+Install with npm
+```
+npm install --save @pxblue/mapbox
+```
+or yarn
+```
+yarn add @pxblue/mapbox
+```
+## Usage
+To use the PX Blue themes for Mapbox, you simply need to pass the theme file into the configuration object for mapbox initialization.
 
-## Running the Example
 ### Angular
+Import the theme into your target typescript file:
 ```
-git clone https://github.com/pxblue/mapbox -b angular
-cd mapbox
-yarn && yarn start
+// app.component.ts
+declare var require;
+const defaultTheme = require('@pxblue/mapbox/default.json');
+const darkTheme = require('@pxblue/mapbox/dark.json');
 ```
-For additional information read our [Angular Guide](https://pxblue.github.io/development/frameworks-web/angular) and our [Environment Setup](https://pxblue.github.io/development/environment)
+
+Bind the theme to the style attribute of the ```<mgl-map>```:
+```
+// app.component.html
+<mgl-map
+    [style]="theme" // bind to your theme variable here
+    [zoom]="[10]"
+    [center]="coordinates"
+>
+```
 
 ### React
+Import the theme into your target file:
 ```
-git clone https://github.com/pxblue/mapbox -b react
-cd mapbox
-yarn && yarn start
+// App.js
+const defaultTheme = require('@pxblue/mapbox/default.json');
+const darkTheme = require('@pxblue/mapbox/dark.json');
 ```
-For additional information read our [React Guide](https://pxblue.github.io/development/frameworks-web/react) and our [Environment Setup](https://pxblue.github.io/development/environment)
 
-### Ionic
+Apply the theme variable to the style parameter of the mapboxgl configuration:
 ```
-git clone https://github.com/pxblue/mapbox -b ionic
-cd mapbox
-yarn && ionic serve
+// App.js
+const map = new mapboxgl.Map({
+    container: this.mapContainer,
+    style: darkTheme, // add the theme variable here
+    center: [lng, lat],
+    zoom
+});
 ```
-To run on a device, add the platform then build and run the project:
-```
-ionic cordova platform add [android|ios]
-ionic cordova build [android|ios]
-ionic cordova run [android|ios]
-```
-For additional information read our [Ionic Guide](https://pxblue.github.io/development/frameworks-mobile/ionic) and our [Environment Setup](https://pxblue.github.io/development/environment)
 
-### React Native
-
-```
-git clone https://github.com/pxblue/mapbox -b reactnative
-cd mapbox
-yarn && yarn start
-```
-For additional information read our [React Native Guide](https://pxblue.github.io/development/frameworks-mobile/react-native) and our [Environment Setup](https://pxblue.github.io/development/environment)
+For more detailed instructions on using Mapbox in your application, see our demos for [Angular](https://stackblitz.com/edit/pxblue-mapbox-angular) or [React](https://stackblitz.com/edit/pxblue-mapbox-react).
