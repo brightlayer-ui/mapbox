@@ -1,0 +1,41 @@
+{
+  "name": "pxblue-mapbox-react",
+  "version": "0.0.1",
+  "author": "PX Blue <pxblue@eaton.com>",
+  "dependencies": {
+    "@material-ui/core": "4.2.0",
+    "@material-ui/icons": "4.2.1",
+    "@pxblue/mapbox": "^1.0.1",
+    "@pxblue/themes": "2.0.3",
+    "mapbox-gl": "0.49.0",
+    "react": "^16.9.0",
+    "react-app-polyfill": "^1.0.2",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  }
+}
