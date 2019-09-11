@@ -9,6 +9,7 @@
     "@pxblue/themes": "2.0.3",
     "mapbox-gl": "0.49.0",
     "react": "^16.9.0",
+    "react-app-polyfill": "^1.0.2",
     "react-dom": "^16.9.0"
   },
   "devDependencies": {

@@ -25,8 +25,5 @@
   "bugs": {
     "url": "https://github.com/pxblue/mapbox/issues"
   },
-  "homepage": "https://github.com/pxblue/mapbox#readme",
-  "dependencies": {
-    "react-app-polyfill": "^1.0.2"
-  }
+  "homepage": "https://github.com/pxblue/mapbox#readme"
 }
