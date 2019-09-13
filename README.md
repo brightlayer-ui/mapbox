@@ -51,7 +51,7 @@ const map = new mapboxgl.Map({
 });
 ```
 
-For more information on using Mapbox in your application, see our [Mapping Mapbox](https://pxblue.github.io/patterns/visualizations) design pattern page.
+For more information on using Mapbox in your application, see our [Mapping Mapbox](https://pxblue.github.io/patterns/visualizations) design page.
 
 ## Demos
 | Framework           | Live Examples  |
