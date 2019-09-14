@@ -50,11 +50,6 @@ const map = new mapboxgl.Map({
     zoom
 });
 ```
+
+### More Information
 For more detailed instructions on using Mapbox in your application, read about our [Visualization Patterns](https://pxblue.github.io/patterns/visualizations) and see our demos for [Angular](https://stackblitz.com/github/pxblue/mapbox/tree/master/angular-demo) and [React](https://codesandbox.io/s/github/pxblue/mapbox/tree/master/react-demo).
-
-
-## Demos
-| Framework           | Live Examples  |
-| ---------------- |------------------|
-| Angular | [View on Stackblitz](https://stackblitz.com/github/pxblue/mapbox/tree/master/angular-demo)
-| React | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/mapbox/tree/master/react-demo)
