@@ -52,7 +52,6 @@ const map = new mapboxgl.Map({
 ```
 For more detailed instructions on using Mapbox in your application, read about our [Visualization Patterns](https://pxblue.github.io/patterns/visualizations) and see our demos for [Angular](https://stackblitz.com/github/pxblue/mapbox/tree/master/angular-demo) and [React](https://codesandbox.io/s/github/pxblue/mapbox/tree/master/react-demo).
 
-For more information on using Mapbox in your application, see our [visualization](https://pxblue.github.io/patterns/visualizations) design page.
 
 ## Demos
 | Framework           | Live Examples  |
