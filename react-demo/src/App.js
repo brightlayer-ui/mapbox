@@ -2,7 +2,7 @@ import React from 'react'
 import mapboxgl from 'mapbox-gl'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import * as PXBThemes from '@pxblue/themes/react';
+import * as PXBThemes from '@pxblue/react-themes';
 import Fab from '@material-ui/core/Fab';
 import FlipIcon from '@material-ui/icons/FlipToBack';
 import Chip from '@material-ui/core/Chip';
