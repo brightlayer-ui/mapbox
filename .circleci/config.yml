@@ -34,7 +34,7 @@ jobs:
 
 workflows:
   version: 2
-  types:
+  mapbox:
     jobs:
       - build
       - publish:
