@@ -7,4 +7,4 @@ import 'react-app-polyfill/stable';
 import App from './App';
 import '@pxblue/react-themes/open-sans';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render( < App / > , document.getElementById('root'));
