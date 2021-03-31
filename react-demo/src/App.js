@@ -1,24 +1,24 @@
-import React from "react";
-import mapboxgl from "mapbox-gl";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import * as PXBThemes from "@pxblue/themes/react";
-import Fab from "@material-ui/core/Fab";
-import FlipIcon from "@material-ui/icons/FlipToBack";
-import Chip from "@material-ui/core/Chip";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
-import { withStyles } from "@material-ui/core/styles";
 
-import "mapbox-gl/dist/mapbox-gl.css";
-import styles from "./styles/styleClasses";
+import React from 'react'
+import mapboxgl from 'mapbox-gl'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import * as PXBThemes from '@pxblue/react-themes';
+import Fab from '@material-ui/core/Fab';
+import FlipIcon from '@material-ui/icons/FlipToBack';
+import Chip from '@material-ui/core/Chip';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 
-const defaultMapTheme = require("@pxblue/mapbox/default.json");
-const darkMapTheme = require("@pxblue/mapbox/dark.json");
+import styles from './styles/styleClasses';
 
-mapboxgl.accessToken =
-    "pk.eyJ1IjoiaW50ZXJnYWxhY3RpY2tyYWlnb3IiLCJhIjoiY2ptN3ZkeW9oNGxoNzNxb2dpNG9rcHZ2cyJ9.k0yACuymc3N9deSV0b6g3A";
+
+const defaultMapTheme = require('@pxblue/mapbox/default.json');
+const darkMapTheme = require('@pxblue/mapbox/dark.json');
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiaW50ZXJnYWxhY3RpY2tyYWlnb3IiLCJhIjoiY2ptN3ZkeW9oNGxoNzNxb2dpNG9rcHZ2cyJ9.k0yACuymc3N9deSV0b6g3A';
 
 const appThemes = [
     { title: "Blue", theme: createMuiTheme(PXBThemes.blue) },
