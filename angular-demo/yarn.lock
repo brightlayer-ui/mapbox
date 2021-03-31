@@ -530,17 +530,10 @@
     tree-kill "1.2.1"
     webpack-sources "1.3.0"
 
-"@pxblue/angular-components@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@pxblue/angular-components/-/angular-components-3.0.1.tgz#a0bf1648b1db90b9d5e3dfe2888cd5f74ac4315b"
-  integrity sha512-uxPMerZFOi5Bu2Vypbqikq4o7OXpUIS6ZkCOpvWyp7XqcPSuuMkWdR1kcJ9GtiuzHF8pGwxffoJPrSll7nt3vA==
-  dependencies:
-    tslib "^1.9.0"
-
-"@pxblue/angular-themes@^6.0.0-beta.0":
-  version "6.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@pxblue/angular-themes/-/angular-themes-6.0.0-beta.0.tgz#1d91d3474a9cf1836656ab924445f4fd72531b1b"
-  integrity sha512-TvystZrlSh/owoyegIV020ausl8578uHpetxB185dFGcYHjBajIO/3lu2AallJXdJI6thfKKoJzZPfHymxoDGg==
+"@pxblue/angular-themes@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@pxblue/angular-themes/-/angular-themes-6.0.1.tgz#706b7297a35aa47d6ded39311aeb8eaaaa557e25"
+  integrity sha512-Coc0SD5bMz8dw7AV7njZeEvHas8YIgyNbuFw7s4cdaFclD/AGh5Ca45LeOZZFTlHycglNAxUto6sU4BZpWkSLA==
   dependencies:
     "@fontsource/open-sans" "^4.1.0"
     "@pxblue/colors" "^3.0.0"
