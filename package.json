@@ -1,29 +1,35 @@
 {
-  "name": "@pxblue/mapbox",
-  "author": "PX Blue <pxblue@eaton.com>",
-  "license": "BSD-3-Clause",
-  "version": "1.0.1",
-  "description": "Various Mapbox themes for use in PX Blue applications",
-  "main": "index.js",
-  "scripts": {
-    "test": "bash ./buildTest.sh",
-    "link:angular": "bash ./linkAngularMapbox.sh",
-    "start:angular": "cd angular-demo && yarn && cd .. && yarn link:angular && cd angular-demo && yarn start",
-    "link:react": "bash ./linkReactMapbox.sh",
-    "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pxblue/mapbox.git"
-  },
-  "keywords": [
-    "Mapbox",
-    "Visualization",
-    "PXBlue",
-    "Maps"
-  ],
-  "bugs": {
-    "url": "https://github.com/pxblue/mapbox/issues"
-  },
-  "homepage": "https://github.com/pxblue/mapbox#readme"
+    "name": "@pxblue/mapbox",
+    "author": "PX Blue <pxblue@eaton.com>",
+    "license": "BSD-3-Clause",
+    "version": "1.0.1",
+    "description": "Various Mapbox themes for use in PX Blue applications",
+    "main": "index.js",
+    "scripts": {
+        "test": "bash ./buildTest.sh",
+        "link:angular": "bash ./linkAngularMapbox.sh",
+        "start:angular": "cd angular-demo && yarn && cd .. && yarn link:angular && cd angular-demo && yarn start",
+        "link:react": "bash ./linkReactMapbox.sh",
+        "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
+        "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pxblue/mapbox.git"
+    },
+    "keywords": [
+        "Mapbox",
+        "Visualization",
+        "PXBlue",
+        "Maps"
+    ],
+    "bugs": {
+        "url": "https://github.com/pxblue/mapbox/issues"
+    },
+    "homepage": "https://github.com/pxblue/mapbox#readme",
+    "prettier": "@pxblue/prettier-config",
+    "devDependencies": {
+        "@pxblue/prettier-config": "^1.0.2",
+        "prettier": "^2.2.1"
+    }
 }

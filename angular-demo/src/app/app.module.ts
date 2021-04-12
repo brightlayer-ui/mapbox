@@ -11,20 +11,21 @@ import { AppComponent } from './app.component';
 import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    CommonModule,
-    FormsModule,
-    MatButtonModule,
-    MatIconModule,
-    MatChipsModule,
-    MatCardModule,
-    NgxMapboxGLModule.withConfig({
-      accessToken: 'pk.eyJ1IjoiaW50ZXJnYWxhY3RpY2tyYWlnb3IiLCJhIjoiY2ptN3ZkeW9oNGxoNzNxb2dpNG9rcHZ2cyJ9.k0yACuymc3N9deSV0b6g3A'
-    }),
-  ],
-  declarations: [ AppComponent, MapComponent, ThemeToggleComponent ],
-  bootstrap:    [ AppComponent ]
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        CommonModule,
+        FormsModule,
+        MatButtonModule,
+        MatIconModule,
+        MatChipsModule,
+        MatCardModule,
+        NgxMapboxGLModule.withConfig({
+            accessToken:
+                'pk.eyJ1IjoiaW50ZXJnYWxhY3RpY2tyYWlnb3IiLCJhIjoiY2ptN3ZkeW9oNGxoNzNxb2dpNG9rcHZ2cyJ9.k0yACuymc3N9deSV0b6g3A',
+        }),
+    ],
+    declarations: [AppComponent, MapComponent, ThemeToggleComponent],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
