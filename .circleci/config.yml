@@ -1,46 +1,46 @@
 version: 2
 jobs:
-  build:
-    docker: 
-      - image: circleci/node:8.11-browsers
-    steps:
-      - checkout
-      - run: 
-          name: Install Dependencies
-          command: yarn
-      - run:
-          name: Verify Artifacts
-          command: yarn test
+    build:
+        docker:
+            - image: circleci/node:12.9.1-browsers
+        steps:
+            - checkout
+            - run:
+                  name: Install Dependencies
+                  command: yarn
+            - run:
+                  name: Verify Artifacts
+                  command: yarn test
 
-  publish:
-    docker:
-      - image: circleci/node:12.9.1-browsers
-    steps:
-      - checkout
-      - run:
-          name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run:
-          name: Publish @pxblue/mapbox
-          command:  |
-            MASTER_VERSION=`node -p "require('./package.json').version"`
-            NPM_LATEST_VERSION=`npm show @pxblue/mapbox version`
-            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-            then
-                npm publish
-            else
-                echo "Latest version is already published."
-            fi
+    publish:
+        docker:
+            - image: circleci/node:12.9.1-browsers
+        steps:
+            - checkout
+            - run:
+                  name: Authenticate with registry
+                  command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+            - run:
+                  name: Publish @pxblue/mapbox
+                  command: |
+                      MASTER_VERSION=`node -p "require('./package.json').version"`
+                      NPM_LATEST_VERSION=`npm show @pxblue/mapbox version`
+                      if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
+                      then
+                          npm publish
+                      else
+                          echo "Latest version is already published."
+                      fi
 
 workflows:
-  version: 2
-  mapbox:
-    jobs:
-      - build
-      - publish:
-          requires:
+    version: 2
+    mapbox:
+        jobs:
             - build
-          filters:
-            branches:
-              only:
-                - master
+            - publish:
+                  requires:
+                      - build
+                  filters:
+                      branches:
+                          only:
+                              - master
