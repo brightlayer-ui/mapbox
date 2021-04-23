@@ -11,6 +11,7 @@
         "start:angular": "cd angular-demo && yarn && cd .. && yarn link:angular && cd angular-demo && yarn start",
         "link:react": "bash ./linkReactMapbox.sh",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
+        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
         "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start"
     },
     "repository": {
