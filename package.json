@@ -12,6 +12,7 @@
         "link:react": "bash ./linkReactMapbox.sh",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
+        "tag:package": "npx -p @pxblue/tag pxb-tag",
         "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start"
     },
     "repository": {
