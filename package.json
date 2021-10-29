@@ -1,9 +1,9 @@
 {
-    "name": "@pxblue/mapbox",
-    "author": "PX Blue <pxblue@eaton.com>",
+    "name": "@brightlayer-ui/mapbox",
+    "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
     "license": "BSD-3-Clause",
-    "version": "1.0.1",
-    "description": "Various Mapbox themes for use in PX Blue applications",
+    "version": "1.0.1-beta.0",
+    "description": "Various Mapbox themes for use in Brightlayer UI applications",
     "main": "index.js",
     "scripts": {
         "test": "bash ./buildTest.sh",
@@ -11,27 +11,27 @@
         "start:angular": "cd angular-demo && yarn && cd .. && yarn link:angular && cd angular-demo && yarn start",
         "link:react": "bash ./linkReactMapbox.sh",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
-        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
-        "tag:package": "npx -p @pxblue/tag pxb-tag",
+        "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-mapbox",
         "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pxblue/mapbox.git"
+        "url": "git+https://github.com/brightlayer-ui/mapbox.git"
     },
     "keywords": [
         "Mapbox",
         "Visualization",
-        "PXBlue",
+        "brightlayer-ui",
         "Maps"
     ],
     "bugs": {
-        "url": "https://github.com/pxblue/mapbox/issues"
+        "url": "https://github.com/brightlayer-ui/mapbox/issues"
     },
-    "homepage": "https://github.com/pxblue/mapbox#readme",
-    "prettier": "@pxblue/prettier-config",
+    "homepage": "https://github.com/brightlayer-ui/mapbox#readme",
+    "prettier": "@brightlayer-ui/prettier-config",
     "devDependencies": {
-        "@pxblue/prettier-config": "^1.0.2",
+        "@brightlayer-ui/prettier-config": "^1.0.2",
         "prettier": "^2.2.1"
     }
 }

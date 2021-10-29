@@ -1,6 +1,6 @@
 {
     "version": 8,
-    "name": "PXBlue - Blue",
+    "name": "Brightlayer UI - Blue",
     "sources": {
         "mapbox-streets": {
             "url": "mapbox://mapbox.mapbox-streets-v7",
