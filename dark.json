@@ -1,6 +1,6 @@
 {
     "version": 8,
-    "name": "PXBlue - Greyscale",
+    "name": "Brightlayer UI - Greyscale",
     "sources": {
         "composite": {
             "url": "mapbox://mapbox.mapbox-streets-v7",
