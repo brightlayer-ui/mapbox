@@ -12,7 +12,7 @@
         "link:react": "bash ./linkReactMapbox.sh",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
-        "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-mapbox",
         "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start"
     },
     "repository": {
