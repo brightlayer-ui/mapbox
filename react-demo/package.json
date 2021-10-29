@@ -1,12 +1,12 @@
 {
-    "name": "brightlayer-ui-mapbox-react",
+    "name": "pxblue-mapbox-react",
     "version": "0.0.1",
-    "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
+    "author": "PX Blue <pxblue@eaton.com>",
     "dependencies": {
         "@material-ui/core": "^4.2.0",
         "@material-ui/icons": "^4.2.1",
-        "@brightlayer-ui/mapbox": "^1.0.1",
-        "@brightlayer-ui/react-themes": "^6.0.0",
+        "@pxblue/mapbox": "^1.0.1",
+        "@pxblue/react-themes": "^6.0.0",
         "mapbox-gl": "^1.0.0",
         "react": "^17.0.0",
         "react-app-polyfill": "^2.0.0",
