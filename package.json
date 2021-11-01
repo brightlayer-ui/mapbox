@@ -2,7 +2,7 @@
     "name": "@brightlayer-ui/mapbox",
     "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
     "license": "BSD-3-Clause",
-    "version": "1.0.1-beta.0",
+    "version": "1.0.1",
     "description": "Various Mapbox themes for use in Brightlayer UI applications",
     "main": "index.js",
     "scripts": {
