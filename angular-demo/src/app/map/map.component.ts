@@ -4,8 +4,8 @@ import { Theme } from '../theme-toggle/themes';
 import { Map } from 'mapbox-gl';
 
 declare var require;
-const defaultTheme = require('@pxblue/mapbox/default.json');
-const darkTheme = require('@pxblue/mapbox/dark.json');
+const defaultTheme = require('@brightlayer-ui/mapbox/default.json');
+const darkTheme = require('@brightlayer-ui/mapbox/dark.json');
 
 @Component({
     selector: 'app-map',

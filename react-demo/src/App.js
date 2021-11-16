@@ -3,7 +3,7 @@ import React from 'react'
 import mapboxgl from 'mapbox-gl'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import * as PXBThemes from '@pxblue/react-themes';
+import * as BLUIThemes from '@brightlayer-ui/react-themes';
 import Fab from '@material-ui/core/Fab';
 import FlipIcon from '@material-ui/icons/FlipToBack';
 import Chip from '@material-ui/core/Chip';
@@ -15,14 +15,14 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './styles/styleClasses';
 
 
-const defaultMapTheme = require('@pxblue/mapbox/default.json');
-const darkMapTheme = require('@pxblue/mapbox/dark.json');
+const defaultMapTheme = require('@brightlayer-ui/mapbox/default.json');
+const darkMapTheme = require('@brightlayer-ui/mapbox/dark.json');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaW50ZXJnYWxhY3RpY2tyYWlnb3IiLCJhIjoiY2ptN3ZkeW9oNGxoNzNxb2dpNG9rcHZ2cyJ9.k0yACuymc3N9deSV0b6g3A';
 
 const appThemes = [
-    { title: "Blue", theme: createMuiTheme(PXBThemes.blue) },
-    { title: "Blue Dark", theme: createMuiTheme(PXBThemes.blueDark) }
+    { title: "Blue", theme: createMuiTheme(BLUIThemes.blue) },
+    { title: "Blue Dark", theme: createMuiTheme(BLUIThemes.blueDark) }
 ];
 
 const mapThemes = [
