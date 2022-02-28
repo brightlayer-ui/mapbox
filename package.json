@@ -13,7 +13,8 @@
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
         "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-mapbox",
-        "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start"
+        "start:react": "cd react-demo && yarn && cd .. && yarn link:react && cd react-demo && yarn start",
+        "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json"
     },
     "repository": {
         "type": "git",
@@ -32,6 +33,7 @@
     "prettier": "@brightlayer-ui/prettier-config",
     "devDependencies": {
         "@brightlayer-ui/prettier-config": "^1.0.2",
+        "npm-license-crawler": "^0.2.1",
         "prettier": "^2.2.1"
     }
 }
